@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/wechat.css">
+    <script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="./js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="./js/angular.min.js"></script>
+    <script type="text/javascript" src="./js/angular-route.min.js"></script>
+    <script type="text/javascript" src="./js/myApp.js"></script>
+    <script type="text/javascript" src="./js/factorys.js"></script>
+    <script type="text/javascript" src="./js/controllers.js"></script>
+    <title>商城</title>
+</head>
+<body>
+  <div ng-view></div>
+  <div ng-controller="indexController">
+      <label hidden="hidden" ng-model="nickName"></label>
+      <label hidden="hidden" ng-model="headImgUrl"></label>
+  <div class="bar bar-tab" style="height: 8%;text-align: center;vertical-align: middle;padding: 5px">
+      <a class="tab-item external" ng-class="{true: 'active'}[isHome]" href="#/home.do">
+          <span class="icon icon-home"></span>
+          <span class="tab-label" >主页</span>
+      </a>
+      <a class="tab-item external" ng-class="{true: 'active'}[isKind]" href="#/kind.do">
+          <span class="icon icon-app"></span>
+          <span class="tab-label">分类</span>
+      </a>
+      <a class="tab-item external" ng-class="{true: 'active'}[isSearch]" href="#/search.do">
+          <span class="icon icon-search"></span>
+          <span class="tab-label">发现</span>
+      </a>
+      <a class="tab-item external" ng-class="{true: 'active'}[isCart]" href="#/cart.do">
+          <span class="icon icon-cart"></span>
+          <span class="tab-label">购物车</span>
+      </a>
+
+      <a class="tab-item external" ng-class="{true: 'active'}[isMine]" href="#/mine.do">
+          <span class="icon icon-me"></span>
+          <span class="tab-label">我的</span>
+          <span class="badge">2</span>
+      </a>
+  </div>
+  </div>
+</body>
+</html>

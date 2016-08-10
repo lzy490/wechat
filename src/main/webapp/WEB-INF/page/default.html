@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>首页</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<!-- Slider -->
+<div class="swiper-container" style="height: 30%; padding-bottom: 10px;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./picture/kiwi2.png"
+                 alt="" style="width:100%;height:100%"></div>
+        <div class="swiper-slide">
+            <img src="./picture/luohan.png"
+                 alt="" style="width:100%;height:100%"></div>
+        <div class="swiper-slide">
+            <img src="./picture/kiwiyellow.png"
+                 alt="" style="width:100%;height:100%"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="type">
+    <div class="row" style="padding-right: 15px;">
+        <div class="col-20" style="text-align:center;">
+            <img src="./picture/clock.png" alt="..." class="img-circle" style="width: 70%"><br>
+            <span class="tab-label" style="font-size: 10px;">限时抢购</span>
+        </div>
+        <div class="col-20" style="text-align:center;">
+            <img src="./picture/dart-board.png" alt="..." class="img-circle" style="width: 70%"><br>
+            <span class="tab-label" style="font-size: 10px;">充值中心</span>
+        </div>
+        <div class="col-20" style="text-align:center;">
+            <img src="./picture/medal.png" alt="..." class="img-circle" style="width: 70%"><br>
+            <span class="tab-label" style="font-size: 10px;">积分商城</span></div>
+        <div class="col-20" style="text-align:center;">
+            <img src="./picture/photo-camera.png" alt="..." class="img-circle" style="width: 70%"><br>
+            <span class="tab-label" style="font-size: 10px;">聚划算</span></div>
+        <div class="col-20" style="text-align:center;">
+            <img src="./picture/trophy.png" alt="..." class="img-circle" style="width: 70%"><br>
+            <span class="tab-label" style="font-size: 10px;">全球购</span></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplayDisableOnInteraction: false,
+            autoplay: 1000
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人信息</title>
+  </head>
+  <body>
+    <!--头像显示-->
+    <div class="head-div">
+      <div class="head-div-1">
+        <img alt="头像" ng-src="{{headImgUrl}}" class="img-circle head-img"/><br>
+        <br>
+        <label style="font-size:20px;">{{nickName}}</label>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin:0rem">
+        <div class="card-header">我的订单
+          <span style="margin-left:auto;color:#a9b7b7;">查看全部订单 <img src="./picture/right-grey.png" style="width:31px;height:31px;"/></span>
+        </div>
+        <div class="card-header">
+          <div class="row" style="width:100%">
+            <div class="col-20 head-div-1">
+              <img src="./picture/pay.png" class="mine-five-img"/><br>
+              待付款
+            </div>
+            <div class="col-20 head-div-1">
+              <img src="./picture/send.png" class="mine-five-img"/><br>
+              待发货
+            </div>
+            <div class="col-20 head-div-1">
+              <img src="./picture/deliver.png" class="mine-five-img"/><br>
+              待收货
+            </div>
+            <div class="col-20 head-div-1">
+              <img src="./picture/evaluate.png" class="mine-five-img"/><br>
+              待评价
+            </div>
+            <div class="col-20 head-div-1">
+              <img src="./picture/recharge.png" class="mine-five-img"/><br>
+              退款/售后
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin:0rem;margin-top:10px;">
+        <div class="card-header">我的钱包
+          <span style="margin-left:auto;color:#a9b7b7;">激活、余额、礼品卡、礼券 <img src="./picture/right-grey.png" style="width:31px;height:31px;"/></span>
+        </div>
+        <div class="card-header">
+          <div class="row" style="width:100%">
+            <div class="col-25 head-div-1">
+              <span>0</span><br>
+              余额
+            </div>
+            <div class="col-25 head-div-1">
+              <span>0</span><br>
+              礼品卡
+            </div>
+            <div class="col-25 head-div-1">
+              <span>0</span><br>
+              礼券
+            </div>
+            <div class="col-25 head-div-1">
+              <span>0</span><br>
+              积分
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
